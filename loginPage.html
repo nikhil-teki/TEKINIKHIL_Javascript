@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sign In</title>
+		<link rel="stylesheet" href="login.css" type="text/css">
+		<script type="text/javascript">
+		alert("Welcome to Epam! Click OK to continue to login page");
+		function isEmpty(field)
+		{
+		    var fieldLength=field.length;
+	        return (fieldLength==0)?true:false;
+		}
+		function validateUserDetails()
+		{
+		    var email=document.getElementById("email").value;
+	        var emailRegex=/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+	        if(isEmpty(email))
+	        {
+		        alert("Email cannot be left blank");
+		        return;
+	        }
+	        else if(!emailRegex.test(email))
+	        {
+		        alert("Invalid email address");
+		        return;
+	        }
+			var passWord=document.getElementById("password").value;
+	        if(isEmpty(passWord))
+	        {
+		        alert("Password cannot be left blank");
+		        return;
+	        }
+			alert("Verifing Credentials Please Wait....");
+		}
+		function forgotPassword()
+		{
+		    var email=document.getElementById("email").value;
+			alert("Check your email "+email+" inbox for password reset link");
+		}
+		</script>
+	</head>
+	<body style="background-color:gray;">
+	<div class="block">
+	<div style="background-color:skyblue;padding:0.5px;color:white;">
+		<h2><center>Sign In</center></h2>
+	</div>
+		<center>
+		<div>
+		<form>
+		<br><input type="text" id="email" class="login" placeholder="mail@example.com"/><br><br>
+		<input type="password" id="password" class="login" placeholder="password"/><br><br>
+		</form>
+		</div>
+		<input type="button" class="signinbutton" value="SIGN IN" onclick="validateUserDetails()"/><br><br>
+		<a class="loginerror" href="" onclick="forgotPassword()">Forgot Password</a><span class="tab"></span>
+		<a class="loginerror" href="RegistrationPage.html" target="_self">Register!</a><br><br>
+		<center style="color:#d4d6d6;">--------------------------  OR  --------------------------</center><br>
+		<a href="https://www.facebook.com" target="_blank"><input type="button" class="button" value="f"><br></a>
+		<a href="https://accounts.google.com" target="_blank"><input type="button" class="button button2" value="g"><a></a><br><br><br>
+		<a href="https://www.epam.com/" target="_blank"><input type="button" class="button3" value="<EPAM LOGIN>"></a>
+		</center>
+	</div>
+	</body
+</html>

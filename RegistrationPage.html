@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sign Up</title>
+		<link rel="stylesheet" href="Registration.css" type="text/css">
+		<script src="RegistrationPage.js"></script>
+	</head>
+	<body style="background-color:gray;">
+	<center>
+	<div class="block">
+	<div style="background-color:skyblue;padding:0.5px;color:white;">
+		<h2><center>Sign Up</center></h2>
+	</div>
+		<center>
+		<div>
+		<form>
+		    <br>
+		    <span class="formLeftjustify">Full Name<span style="color:red">*</span></span>: <input type="text" id="name" class="login" placeholder="FirstName LastName"/><br><br>
+		    <span class="formLeftjustify">Email<span style="color:red">*</span></span>: <input type="text" id="email" class="login" placeholder="mail@example.com"/><br><br>
+		    <span class="formLeftjustify">Confirm Email<span style="color:red">*</span></span>: <input type="text" id="emailMatch" class="login" placeholder="re-enter email address"/><br><br>
+		    <span class="formLeftjustify">Mobile no.<span style="color:red">*</span></span>: <input type="text" id="mobileNo." class="login" placeholder="10 digit mobile number"/><br><br>
+		    <span class="formLeftjustify">Password<span style="color:red">*</span></span>: <input type="password" id="password" class="login" placeholder="password"/><br><br>
+		    <span class="formLeftjustify">Confirm Password<span style="color:red">*</span></span>: <input type="password" id="confirmPassword" class="login" placeholder="re-enter password"/><br><br>
+		</form>
+		</div>
+		<div>
+		<span class="formLeftjustify remarks">Fields marked <span style="color:red">*</span> are required</span><br><br>
+		</div>
+		<input type="button" class="signinbutton" value="Register" onclick="validateUserDetails()"/><br><br>
+		<a class="loginlink" href="loginPage.html" target="_self">Already have an account?Sign in</a><br><br>
+		<center style="color:#d4d6d6;">--------------------------  OR  --------------------------</center><br>
+		<a href="https://www.facebook.com" target="_blank"><input type="button" class="button" value="f"><br></a>
+		<a href="https://accounts.google.com" target="_blank"><input type="button" class="button button2" value="g"></a><br><br><br>
+		<a href="https://www.epam.com/" target="_blank"><input type="button" class="button3" value="<EPAM LOGIN>"></a><br><br><br>
+		</center>
+	</div>
+	</center>
+	</body
+</html>

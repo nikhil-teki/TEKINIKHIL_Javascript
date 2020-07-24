@@ -1,0 +1,70 @@
+.block
+{
+    height:600px;
+    width:360px;
+    background-color:white;	
+	margin-left:600px;
+	border-radius:7px;
+}
+.tab 
+{ 
+    display: inline-block; 
+    margin-left: 130px; 
+} 
+.signinbutton
+{
+	border-radius:7px;
+	background-color: skyblue;
+	border: none;
+  	color: white;
+  	padding: 12px 120px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 18px;
+  	margin: 4px 2px;
+  	cursor: pointer;
+}
+.login
+{
+	height:40px;
+	width:300px;
+}
+.loginerror
+{
+	color:#6b6868;
+}
+.button 
+{
+  	border-radius:7px;
+	background-color:#3b5998;
+	border: none;
+  	color: white;
+  	padding: 10px 150px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 22px;
+  	margin: 4px 2px;
+  	cursor: pointer;
+	color:white;
+}
+.button2 
+{
+	background-color:#db4a39;
+} 
+.button3 
+{
+	border-radius:7px;
+	background-color:#a3c644;
+	border: none;
+  	color: white;
+  	padding: 10px 75px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 22px;
+  	margin: 4px 2px;
+  	cursor: pointer;
+	color:white;
+}
